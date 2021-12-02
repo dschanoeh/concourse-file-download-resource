@@ -1,4 +1,10 @@
 # File Download Resource for Concourse
+
+[![GitHub license](https://img.shields.io/github/license/dschanoeh/concourse-file-download-resource)](https://github.com/dschanoeh/concourse-file-download-resource/blob/main/LICENSE)
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/dschanoeh/concourse-file-download-resource)
+![Docker Pulls](https://img.shields.io/docker/pulls/dschanoeh/concourse-file-download-resource)
+![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/dschanoeh/concourse-file-download-resource)
+
 Check a remote file for changes in its sha1 checksum and download it.
 
 ## Installing
