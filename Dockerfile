@@ -1,4 +1,6 @@
-FROM badouralix/curl-jq
+FROM alpine:3.15.4
+
+RUN apk add --no-cache curl jq
 
 LABEL org.opencontainers.image.source="https://github.com/dschanoeh/concourse-file-download-resource"
 LABEL org.opencontainers.image.description="A concourse resource to download arbitrary files"
