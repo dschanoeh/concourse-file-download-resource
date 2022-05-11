@@ -24,9 +24,9 @@ fi
 
 # Use basic auth in case user and password are set
 if [[ "$USER" != "null" ]] && [[ "$PASSWORD" != "null" ]]; then
-    curl -s -u $USER:$PASSWORD -o $FILENAME $URL
+    curl --fail --silent --user $USER:$PASSWORD --output $FILENAME $URL
 else
-    curl -s -o $FILENAME $URL
+    curl --fail --silent --output $FILENAME $URL
 fi
 
 CHECKSUM=`/usr/bin/sha1sum $FILENAME | cut -d " " -f 1`
